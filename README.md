@@ -8,4 +8,5 @@ Following the Ray Tracing in One Weekend Book Series by Peter Shirley -
 </a>
 
 
-![2020/09/21 - Ray Traced Spheres and Reflections](https://github.com/Shurkuris/PathTracing/tree/master/progress/2020_09_21-FirstWeekFinal.png)
+# In-progress Screenshots
+![2020/09/21 - Ray Traced Spheres and Reflections](https://github.com/Shurkuris/PathTracing/blob/master/progress/2020_09_21-FirstWeekFinal.png)
