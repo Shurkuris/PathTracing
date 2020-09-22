@@ -13,20 +13,20 @@ public:
 	point3 max() const { return _max; }
 
 	// Original code
-	bool hit(const ray& r, double tmin, double tmax) const
-	{
-		for (int a = 0; a < 3; a++)
-		{
-			auto t0 = fmin((_min[a] - r.origin()[a]) / r.direction()[a], (_max[a] - r.origin()[a]) / r.direction()[a]);
-			auto t1 = fmax((_min[a] - r.origin()[a]) / r.direction()[a], (_max[a] - r.origin()[a]) / r.direction()[a]);
+	//bool hit(const ray& r, double tmin, double tmax) const
+	//{
+	//	for (int a = 0; a < 3; a++)
+	//	{
+	//		auto t0 = fmin((_min[a] - r.origin()[a]) / r.direction()[a], (_max[a] - r.origin()[a]) / r.direction()[a]);
+	//		auto t1 = fmax((_min[a] - r.origin()[a]) / r.direction()[a], (_max[a] - r.origin()[a]) / r.direction()[a]);
 
-			tmin = fmax(t0, tmin);
-			tmax = fmin(t1, tmax);
-			if (tmax <= tmin) return false;
-		}
+	//		tmin = fmax(t0, tmin);
+	//		tmax = fmin(t1, tmax);
+	//		if (tmax <= tmin) return false;
+	//	}
 
-		return true;
-	}
+	//	return true;
+	//}
 
 	// Optimized code
 	inline bool hit(const ray& r, double tmin, double tmax) const
